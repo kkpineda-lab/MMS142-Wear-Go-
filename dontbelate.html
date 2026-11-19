@@ -15,7 +15,8 @@
 	crossorigin="anonymous">
 	
 	<!-- Custom CSS -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/product.css">
 	
 	<!-- External JavaScript -->
 	<script src="js/order.js" defer></script>
@@ -24,7 +25,7 @@
 <body>
 	<header>	
 		<!-- Nav Bar -->
-		<nav class="navbar md:navbar-expand py-0">
+		<nav class="navbar md:navbar-expand py-0" aria-label="Main navigation">
 			<div class="container">
 				
 				<span class="navbar-brand">
@@ -53,9 +54,10 @@
 						</ul>
 						
 						<div class="d-flex align-items-center gap-2 md:ms-auto">
-							<form role="search">
+							<form class="nav-search-box" role="search">
+								<span aria-hidden="true">&#128269;</span>
 								<label for="siteSearch" class="visually-hidden">Search</label>
-								<input id="siteSearch" class="form-control rounded-pill" type="search" placeholder="Search">
+								<input id="siteSearch" class="nav-search-input" type="search" placeholder="Search">
 							</form>	
 							
 							<button type="button" class="nav-extra-button" aria-label="View Cart" onclick="alert('Cart is currently unavailable')">
@@ -266,12 +268,12 @@
 	<!-- Footer -->
 	<footer class="site-footer py-3 mt-auto">
 		<div class="container d-flex flex-wrap justify-content-between align-items-center">
-			<p class="mb-0">&copy; 2026 Wear & Go. All rights reserved.</p>
+			<p class="mb-0">&copy; 2026 Wear &amp; Go. All Rights Reserved.</p>
 			
-			<div class="dflex gap-2">
+			<div class="d-flex gap-2">
 				<a href="privacy.html" class="footer-link">Privacy Policy</a>
 				<span aria-hidden="true">|</span>
-				<a href="terms.html" class="footer-link">Terms & Conditions</a>
+				<a href="terms.html" class="footer-link">Terms &amp; Conditions</a>
 			</div>
 		</div>
 	</footer>
