@@ -1,0 +1,626 @@
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+label:focus-within {
+  outline: 3px solid #0E0385;
+  outline-offset: 2px;
+}
+
+body {
+	background-color: #EAE5D6;
+	font-family: 'Nunito', sans-serif;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.navbar-nav .nav-link,
+.navline,
+.product-banner-title,
+.product-title,
+.product-reviews-heading,
+.product-order-dialog .product-label {
+	font-family: 'Sora', sans-serif;
+}
+
+.navbar {
+	background-color: ##EAE5D6;
+	padding: 0;
+}
+
+.navbar-brand {
+	padding: 0;
+	flex-shrink: 0;
+}
+
+.brand-logo {
+	width: 150px;
+	height: auto;
+	object-fit: contain;
+	margin: -5px 0;
+}
+
+.navbar-nav .nav-link,
+.nav-line {
+	color: #0E0385;
+	font-weight: 700;
+	font-size: 1.1rem;
+}
+
+.nav-extra-button {
+	width: 38px;
+	height: 38px;
+	border: none;
+	background: transparent;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+
+.nav-extra-button:hover {
+	opacity: 0.75;
+}
+
+.nav-icon-img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+#siteSearch {
+	max-width: 100%;
+	border: none;
+	background-color: #FFFFFF;
+}
+
+.site-footer {
+	background-color: #4F639F;
+	color: #FFFFFF;
+	font-size: 0.85rem;
+}
+
+.footer-link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.product-banner-box {
+  background-color: #4F639F;
+  color: #FFFFFF;
+}
+
+.product-banner-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.product-banner-subtitle {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.product-side-card,
+.product-center-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-side-card {
+  width: 32%;
+  height: 90%;
+  min-height: 400px;
+  background-color: #D6A89D;
+  padding: 0.75rem;
+}
+
+.product-center-card {
+  width: 44%;
+  height: 100%;
+  min-height: 430px;
+  background-color: #DFADAF;
+  padding: 1rem;
+  margin: 0 -20px;
+  z-index: 2;
+}
+
+.product-card-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.product-details-card {
+  background-color: #FFFFFF;
+}
+
+.product-title {
+  color: #4F639F;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.product-price {
+  color: #000000;
+  font-weight: 700;
+}
+
+.product-rating,
+.product-description,
+.product-label {
+  color: #4F639F;
+  font-size: 0.85rem;
+}
+
+.product-label {
+  font-weight: 700;
+}
+
+.product-divider {
+  border-top: 2px solid #4F639F;
+  opacity: 1;
+}
+
+.shirt-color input,
+.product-size-button input {
+  display: none;
+}
+
+.shirt-color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #838181;
+  cursor: pointer;
+}
+
+.shirt-white { background-color: #FFFFFF; }
+.shirt-black { background-color: #000000; }
+.shirt-darkgray { background-color: #838181; }
+.shirt-lightgray { background-color: #D9D9D9; }
+
+.shirt-color:has(input:checked) {
+  border: 3px solid #0E0385;
+}
+
+.product-size-button {
+  width: 34px;
+  height: 34px;
+  background-color: #D9D9D9;
+  color: #4F639F;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.product-size-button:has(input:checked) {
+  background-color: #4F639F;
+  color: #FFFFFF;
+}
+
+.product-quantity-input {
+  width: 60px;
+  background-color: #D9D9D9;
+  border-radius: 4px;
+  color: #4F639F;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0.25rem 0.4rem;
+}
+
+.product-button-cart,
+.product-button-order {
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.product-button-cart {
+  background-color: #FFFFFF;
+  color: #4F639F;
+  border: 1px solid #4F639F;
+  padding: 0.45rem 1.5rem;
+}
+
+.product-button-order {
+  background-color: #0E0385;
+  color: #FFFFFF;
+  border: 1px solid #0E0385;
+  padding: 0.45rem 1.75rem;
+}
+
+.product-button-order:hover {
+  background-color: #4F639F;
+  border-color: #4F639F;
+}
+
+.product-reviews-heading {
+  color: #4F639F;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.product-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid #4F639F;
+  background-color: #FFFFFF;
+  flex-shrink: 0;
+}
+
+.product-stars,
+.product-review-text {
+  color: #4F639F;
+  font-size: 0.8rem;
+}
+
+.product-see-more {
+  color: #0E0385;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.dialog:not([open]) {
+  display: none;
+}
+
+.product-order-dialog {
+  width: 100%;
+  max-width: 480px;
+  border: none;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .product-order-dialog {
+    margin-top: 12rem;
+    margin-left: auto;
+    margin-right: 16%;
+  }
+}
+
+.product-order-dialog .product-label {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #4F639F;
+}
+
+.product-button-close {
+  background: transparent;
+  border: none;
+  color: #4F639F;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/*
+.navbar {
+	background-color: #EAE5d6;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.navbar-brand {
+	padding-top: 0;
+	padding-bottom: 0;
+	flex-shrink: 0;
+}
+	
+.navbar-nav .nav-link, .nav-line {
+	font-family: 'Sora', sans-serif;
+	color: #0E0385;
+	font-weight: 700;
+	font-size: 1.1rem;
+}
+
+.brand-logo {
+	height: auto;
+	width: 150px;
+	object-fit: contain;
+	margin-top: -5px;
+	margin-bottom: -5px;
+}
+
+
+.nav-circle-button {
+	width: 38px;
+	height: 38px;
+	border: none;
+	background-color: transparent;
+	padding: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+
+
+.nav-circle-button:hover {
+	background-color: #D9D9D9;
+	opacity: 0.75;
+}
+
+.nav-icon-img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+	
+#siteSearch {
+	max-width: 100%;
+	border: none;
+	background-color: #FFFFFF;
+}
+
+
+body {
+	background-color: #EAE5d6;
+	font-family: 'Nunito', sans-serif;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.product-banner-box {
+	background-color: #4F639F;
+	color: #FFFFFF;
+}
+
+.product-banner-title {
+	font-family: 'Sora', sans-serif;
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.product-banner-subtitle {
+	font-style: italic;
+	font-size: 0.9rem;
+}
+
+.product-side-card {
+  width: 32%;
+  height: 90%;
+  min-height: 400px;
+  background-color: #D6A89D;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-center-card {
+  width: 44%;
+  height: 100%;
+  min-height: 430px;
+  background-color: #DFADAF;
+  padding: 1rem;
+  margin-left: -20px;
+  margin-right: -20px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.product-details-card {
+	background-color: #FFFFFF;
+}
+
+.product-title {
+	font-family: 'Sora', sans-serif;
+	color: #4F639F;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.product-rating {
+	color: #4F639F;
+	font-size: 0.85rem;
+}
+
+.product-price {
+	color: #000000;
+	font-weight: 700;
+}
+
+.product-description {
+	font-size:0.85rem;
+	color: #4F639F;
+}
+
+.product-divider {
+	border-top: 2px solid #4F639F;
+	opacity: 1;
+}
+
+.product-label {
+	color: #4F639F;
+	font-weight: 700;
+	font-size: 0.85rem;
+}
+
+.product-quantity-input {
+	width: 60px;
+	background-color: #D9D9D9;
+	border-radius: 4px;
+	color: #4F639F;
+	font-weight: 700;
+	font-size: 1.1rem;
+	text-align: center;
+	padding: 0.25rem 0.4rem;
+	
+}
+
+.product-button-cart {
+	background-color: #FFFFFF;
+	color: #4F639F;
+	border: 1px solid #4F639F;
+	border-radius: 4px;
+	padding: 0.45rem 1.5rem;
+	font-weight: 600;
+	font-size: 1rem;
+}
+
+.product-button-order {
+	background-color: #0E0385;
+	color: #FFFFFF;
+	border: 1px solid #0E0385;
+	border-radius: 4px;
+	padding: 0.45rem 1.75rem;
+	font-weight: 600;
+	font-size: 1rem;
+}
+
+.product-button-order:hover {
+	background-color: #4F639F;
+	border-color: #4F639F;
+}
+
+.product-reviews-heading {
+	font-family: 'Sora', sans-serif;
+	color: #4F639F;
+	font-size: 1.05rem;
+	font-weight: 700;
+}
+
+.product-avatar {
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	border: 2px solid #4F639F;
+	background-color: #FFFFFF;
+	flex-shrink:0;
+}
+
+.product-stars {
+	color: #4F639F;
+	font-size: 0.8rem;
+}
+
+.product-review-text {
+	color: #4F639F;
+	font-size: 0.8rem;
+}
+
+.product-see-more {
+	color: #0E0385;
+	font-size: 0.8rem;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.shirt-color input, 
+.product-size-button input {
+  display: none;
+}
+
+.shirt-color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #838181;
+  cursor: pointer;
+}
+.shirt-white { background-color: #FFFFFF; }
+.shirt-black { background-color: #000000; }
+.shirt-darkgray { background-color: #838181; }
+.shirt-lightgray { background-color: #D9D9D9; }
+
+.shirt-color:has(input:checked) {
+  border: 3px solid #0E0385;
+}
+
+.product-size-button {
+  width: 34px;
+  height: 34px;
+  background-color: #D9D9D9;
+  color: #4F639F;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.product-size-button:has(input:checked) {
+  background-color: #4F639F;
+  color: #FFFFFF;
+}
+
+.product-order-dialog {
+	width: 100%;
+	max-width: 480px;
+	border: none;
+	border-radius: 4px;
+	padding: 1rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+	.product-order-dialog {
+		margin-top: 12rem;
+		margin-left: auto;
+		margin-right: 16%;
+	}
+}
+
+.product-order-dialog .product-label {
+	font-family: 'Sora', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 700;
+	color: #4F639F;
+}
+
+.product-button-close {
+	background: transparent;
+	border: none;
+	color: #4F639F;
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 1;
+	cursor: pointer;
+}
+
+.site-footer {
+	background-color: #4F639F;
+	color: #FFFFFF;
+	font-size: 0.85rem;
+}
+
+.footer-link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.footer-link:hover {
+	text-decoration: underline;
+}
+
+.dialog:not([open]) {
+	display: none;
+}
+*/	
