@@ -205,20 +205,17 @@
 
     </div>
 
-<!-- Scale the original 1440px Figma layout to fit width while keeping height ratio -->
+    <!-- Scale the original 1440px Figma layout to fit narrower screens -->
     <script>
         function resizeWebsite() {
             const website = document.querySelector(".home1-mockup");
             if (!website) return;
 
             const originalWidth = 1440;
-            const originalHeight = 2287;
             const screenWidth = document.documentElement.clientWidth;
             const scale = Math.min(screenWidth / originalWidth, 1);
 
-            website.style.transformOrigin = "top left";
-            website.style.transform = `scale(${scale})`;
-            document.body.style.height = `${originalHeight * scale}px`;
+            website.style.zoom = scale;
         }
 
         window.addEventListener("load", resizeWebsite);
