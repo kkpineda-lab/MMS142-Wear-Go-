@@ -1,0 +1,149 @@
+
+/* Shared Wear & Go design tokens */
+:root {
+    --color-antiquewhite-100: #EAE5D6;
+    --color-antiquewhite-200: rgba(234, 229, 214, 0.5);
+    --color-black: #000000;
+    --color-navy: #0E0385;
+    --color-pink: #DFADAF;
+    --color-steelblue: #4F639F;
+    --color-white: #FFFFFF;
+
+    --br-12: 12px;
+    --font-nunito: 'Nunito', Arial, sans-serif;
+    --font-sora: 'Sora', Arial, sans-serif;
+
+    --fs-15: 15px;
+    --fs-20: 20px;
+    --fs-48: 48px;
+
+    --shadow-drop: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    --height-44: 44px;
+    --width-64: 64px;
+    --width-1440: 1440px;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+label:focus-within {
+	outline: 3px solid #0E0385;
+	outline-offset: 2px;
+}
+
+body {
+	background-color: #EAE5D6;
+	font-family: 'Nunito', sans-serif;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.navbar {
+	background-color: #EAE5D6;
+	padding: 0;
+}
+
+.navbar-brand {
+	padding: 0;
+	flex-shrink: 0;
+}
+
+.brand-logo {
+	width: 150px;
+	height: auto;
+	object-fit: contain;
+	margin: -5px 0;
+}
+
+.navbar-nav .nav-link,
+.nav-line {
+	font-family: 'Sora', sans-serif;
+	color: #0E0385;
+	font-weight: 700;
+	font-size: 1.1rem;
+}
+
+.navbar-nav .nav-link:hover {
+	color: #4F639F;
+	cursor: pointer;
+}
+
+.nav-search-box {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	background-color: #FFFFFF;
+	border-radius: 50rem;
+	padding: 0.375rem 1rem;
+	width: 280px;
+	max-width: 100%;
+}
+
+.nav-search-input {
+	border: none;
+	background: transparent;
+	width: 100%;
+	color: #4F639F;
+	font-family: 'Nunito', sans-serif;
+	font-size: 0.95rem;
+}
+
+.nav-search-input:focus {
+	outline: none;
+}
+
+.nav-search-box:focus-within {
+	outline: 3px solid #0E0385;
+	outline-offset: 2px;
+}
+
+.nav-extra-button {
+	width: 38px;
+	height: 38px;
+	border: none;
+	background: transparent;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	cursor: pointer;
+}
+
+.nav-extra-button:hover {
+	opacity: 0.75;
+}
+
+.nav-icon-img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.site-footer {
+	background-color: #4F639F;
+	color: #EAE5D6;
+	font-family: 'Nunito', sans-serif;
+}
+
+.site-footer p,
+.site-footer a,
+.site-footer span {
+	font-size: 1rem;
+	font-weight: 700;
+	color: #EAE5D6;
+	letter-spacing: 0.3px;
+}
+
+.footer-link {
+	color: #EAE5D6;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.footer-link:hover {
+	text-decoration: underline;
+}
