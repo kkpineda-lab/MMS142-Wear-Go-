@@ -7,7 +7,6 @@
   	
   	<link rel="stylesheet" href="./global.css" />
   	<link rel="stylesheet"  href="./index.css" />
-	<link rel="stylesheet"  href="./responsive.css" />
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,700&display=swap" />
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&display=swap" />
   	
@@ -67,6 +66,7 @@
         				</div>
         				<img class="do-good-work-tee-mockup-1" alt="">
         				
+        				<div class="view-product2" id="vIEWPRODUCTText">VIEW PRODUCT</div>
       			</div>
       			<div class="product-2">
         				<div class="product-2-child">
@@ -85,6 +85,7 @@
         				</div>
         				<img class="everyday-comfort-tee-mockup-1" alt="">
         				
+        				<div class="view-product4" id="vIEWPRODUCTText">VIEW PRODUCT</div>
       			</div>
       			<div class="product-1">
         				<div class="product-1-child">
@@ -103,6 +104,7 @@
         				</div>
         				<img class="dont-be-late-tee-mockup-1" alt="">
         				
+        				<div class="view-product6" id="vIEWPRODUCTText">VIEW PRODUCT</div>
       			</div>
       			<b class="find-your-go-to">“Find your go-to T-shirt for everyday comfort and easy style.”</b>
       			<div class="everyday-wear-container">
@@ -157,6 +159,13 @@
   	
   	
   	<script>
+    		var vIEWPRODUCTText = document.getElementById("vIEWPRODUCTText");
+    		if(vIEWPRODUCTText) {
+      			vIEWPRODUCTText.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}
+    		
     		var termsConditions = document.getElementById("termsConditions");
     		if(termsConditions) {
       			termsConditions.addEventListener("click", function (e) {
