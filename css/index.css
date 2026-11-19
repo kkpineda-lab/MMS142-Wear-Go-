@@ -7,7 +7,7 @@
   	overflow: hidden;
   	text-align: center;
   	font-size: var(--fs-15);
-  	color: var(--color-steelblue);
+  	color: var(--color-navy);
   	font-family: var(--font-sora);
 }
 .home1-mockup-inner {
@@ -130,7 +130,7 @@
 }
 .model2-icon {
   	position: absolute;
-  	top: 195px;
+  	top: 200px;
   	left: 26px;
   	width: 440px;
   	height: 636px;
