@@ -293,8 +293,8 @@
   	top: 106px;
   	left: 748px;
   	width: 660px;
-  	height: 723.8px;
-  	object-fit: cover;
+  	height: 720px;
+  	object-fit: contain;
 }
 .stylish-comfortable-and {
   	position: absolute;
