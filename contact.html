@@ -15,12 +15,14 @@
 	integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" 
 	crossorigin="anonymous">
 	
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="contact-us-css.css">
+	
 </head>
 
 <body>
 	<header>	
-		<!-- Nav Bar -->
-		<nav class="navbar md:navbar-expand py-0">
+		<nav class="navbar md:navbar-expand py-0" aria-label="Main navigation">
 			<div class="container">
 				
 				<span class="navbar-brand">
@@ -39,19 +41,20 @@
 					
 					<div class="drawer-body">
 						<ul class="nav navbar-nav align-items-center">
-							<li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 							<li class="nav-item d-none md:d-inline nav-line" aria-hidden="true">|</li>
-							<li class="nav-item"><a class="nav-link" href="home.html#shop">Shop</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.html#shop">Shop</a></li>
 							<li class="nav-item d-none md:d-inline nav-line" aria-hidden="true">|</li>
-							<li class="nav-item"><a class="nav-link" href="home.html#about">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
 							<li class="nav-item d-none md:d-inline nav-line" aria-hidden="true">|</li>
 							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 						</ul>
 						
 						<div class="d-flex align-items-center gap-2 md:ms-auto">
-							<form role="search">
+							<form class="nav-search-box" role="search">
+								<span aria-hidden="true">&#128269;</span>
 								<label for="siteSearch" class="visually-hidden">Search</label>
-								<input id="siteSearch" class="form-control rounded-pill" type="search" placeholder="Search">
+								<input id="siteSearch" class="nav-search-input" type="search" placeholder="Search">
 							</form>	
 							
 							<button type="button" class="nav-extra-button" aria-label="View Cart" onclick="alert('Cart is currently unavailable')">
@@ -67,10 +70,9 @@
 			</div>
 		</nav>
 	</header>
-
 <main> 
 	
-	<div class="row g-4" id="get-in-touch">
+	<div class="row g-4 m-5" id="get-in-touch">
 		<div class="md:col-4">
 			<div class="card">
 				<div class="card-body">
@@ -79,72 +81,89 @@
 			</div>
 		</div>
 		
-		<div class="md:col-7">
-			<h1 class="text-center">Get in Touch</h1>
-			<h2 class="text-center">Have a question about our products or your order? <br> We'd love to hear from you.<h2>
-			<button type="button" class="contact-button" data-bs-toggle="dialog" data-bs-target="#contactDialog">Send Us a Message</button>
+		<div class="md:col-7 space-y-10">
+			<h1 class="text-center p-5">Get in Touch</h1>
+			<h2 class="text-center p-3">Have a question about our <br> products or your order? <br> <br> We'd love to hear <br> from you.</h2>
 			
-			<h3>Contact Information</h3>
-			<div class="d-flex justify-content-evenly my-5">
-				<h4>Email</h4> 
-				<br>
-				<p><a href="mailto:hello@wearandgo.com">hello@wearandgo.com</a></p>
+			<div class="text-center">
+				<button type="button" class="contact-button" data-bs-toggle="dialog" data-bs-target="#contactDialog" id="send-us-a-message-button" class="text-center">Send Us a Message</button>
+			</div>
+			
+			<dialog class="dialog contact-dialog" id="contactDialog" aria-labelledby="contactDialogTitle">
+	
+				<div>
+					<h2 class="visually-hidden" id="contactDialogTitle">Contact Form</h2>
+					<button type="button" class="contact-button-close ms-auto" data-bs-dismiss="dialog" aria-label="Close Contact Form">&times;</button>
+				</div>
+			
+				<div>
+					<form id="contactForm" action="#" method="post">
+						<div>
+							<label for="name"> Name <span class="required">(required)</span></label>
+							<input type="text" id="name" name="Name" required autocomplete="name">
+						</div>
+				
+						<div>
+							<label for="email"> E-mail <span class="required">(required)</span></label>
+							<input type="email" id="email" name="E-mail" required autocomplete="email">
+						</div>
+			
+						<div>
+							<label for="message"> Message <span class="required">(required)</span></label>
+							<input type="message" id="message" name="Message" required autocomplete="message">
+						</div>
 		
-				<h4>Social Media</h4> 
-				<br>
-				<p>@wearandgo</p>
+						<button type="submit" class="redirect-button" data-bs-toggle="dialog" data-bs-target="#redirectDialog">Send</button>	
+					</form>
+				</div>
+			</dialog>
+	
+			<dialog class="dialog redirect-dialog" id="redirectDialog" aria-labelledby="redirectDialogTitle">
+						
+				<div>
+					<h2 class="visually-hidden" id="redirectDialogTitle">Redirection Notice</h2>
+					<button type="button" class="redirect-button-close ms-auto" data-bs-dismiss="dialog" aria-label="Close Redirection Notice">&times;</button>
+				</div>
+				
+				<div>
+					<div class="d-flex align-items-center">
+						<div class="circle" id="circle1"></div>
+						<div class="circle" id="circle2"></div>
+						<div class="circle" id="circle3"></div>
+					</div>
+					
+					<div>
+						<p>"Redirecting you to your email..."</p>
+					</div>
+				</div>
+				
+			</dialog>
+			
+			<div class="text-center"> 
+				<h3>Contact Information</h3>
+			</div>
+			
+			<div class="d-flex justify-content-evenly my-5">
+				<div> 
+					<h4 class="text-center">Email</h4>
+					<p><a href="mailto:hello@wearandgo.com">hello@wearandgo.com</a></p> 
+				</div>
+		
+				<div> 
+					<h4 class="text-center">Social Media</h4>
+					<p>@wearandgo</p> 
+				</div>
 			</div>
 		</div>
-	
-		<dialog class="dialog contact-dialog" id="contactDialog" aria-labelledby="contactDialogTitle">
-	
-			<div>
-				<h2 class="visually-hidden" id="contactDialogTitle">Contact Form</h2>
-				<button type="button" class="contact-button-close ms-auto" data-bs-dismiss="dialog" aria-label="Close Contact Form">&times;</button>
-			</div>
-			
-			<div>
-				<form id="contactForm" action="#" method="post">
-					<div>
-						<label for="name"> Name <span class="required">(required)</span></label>
-						<input type="text" id="name" name="Name" required autocomplete="name">
-					</div>
-				
-					<div>
-						<label for="email"> E-mail <span class="required">(required)</span></label>
-						<input type="email" id="email" name="E-mail" required autocomplete="email">
-					</div>
-			
-					<div>
-						<label for="message"> Message <span class="required">(required)</span></label>
-						<input type="message" id="message" name="Message" required autocomplete="message">
-					</div>
-		
-					<button type="submit" class="redirect-button" data-bs-toggle="dialog" data-bs-target="#redirectDialog">Send</button>	
-				</form>
-			</div>
-		</dialog>
-	
-		<dialog class="dialog redirect-dialog" id="redirectDialog" aria-labelledby="redirectDialogTitle">
-						
-			<div>
-				<h2 class="visually-hidden" id="redirectDialogTitle">Redirection Notice</h2>
-				<button type="button" class="redirect-button-close ms-auto" data-bs-dismiss="dialog" aria-label="Close Redirection Notice">&times;</button>
-				</div>
-						
-				<p>"Redirecting you to your email..."</p>
-		</dialog>
 	</div>
-		
-		<!-- footer here -->
-	<footer class="site-footer py-3 mt-auto">
+<footer class="site-footer py-3 mt-auto">
 		<div class="container d-flex flex-wrap justify-content-between align-items-center">
-			<p class="mb-0">&copy; 2026 Wear & Go. All rights reserved.</p>
+			<p class="mb-0">&copy; 2026 Wear &amp; Go. All Rights Reserved.</p>
 			
-			<div class="dflex gap-2">
-				<a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+			<div class="d-flex gap-2">
+				<a href="privacy.html" class="footer-link">Privacy Policy</a>
 				<span aria-hidden="true">|</span>
-				<a href="terms.html" class="footer-link">Terms & Conditions</a>
+				<a href="terms.html" class="footer-link">Terms &amp; Conditions</a>
 			</div>
 		</div>
 	</footer>
