@@ -1,3 +1,4 @@
+
 body {
   	margin: 0;
   	line-height: normal;
@@ -18,33 +19,33 @@ body {
   	--color-white: #fff;
   	
   	/* BorderRadius */
-  	--br-12: 0.75rem;
+  	--br-12: 12px;
   	
   	/* Font */
   	--font-nunito: Nunito, Arial, sans-serif;
   	--font-sora: Sora, Arial, sans-serif;
   	
   	/* FontSize */
-  	--fs-13: 0.8125rem;
-  	--fs-15: 0.9375rem;
-  	--fs-20: 1.25rem;
-  	--fs-48: 3rem;
+  	--fs-13: 13px;
+  	--fs-15: 15px;
+  	--fs-20: 20px;
+  	--fs-48: 48px;
   	
   	/* Shadows */
-  	--shadow-drop: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+  	--shadow-drop: 0px 4px 4px rgba(0, 0, 0, 0.25);
   	
   	/* WidthHeights */
-  	--height-44: 2.75rem;
-  	--width-64: 4rem;
-  	--width-1440: 90rem;
+  	--height-44: 44px;
+  	--width-64: 64px;
+  	--width-1440: 1440px;
   	
   	
-  	--left-0: 0;
-  	--left-3: 0.1875rem;
-  	--left-26: 1.625rem;
-  	--top-0: 0;
-  	--top-2: 0.125rem;
-  	--top-16: 1rem;
-  	--top-26: 1.625rem;
+  	--left-0: 0px;
+  	--left-3: 3px;
+  	--left-26: 26px;
+  	--top-0: 0px;
+  	--top-2: 2px;
+  	--top-16: 16px;
+  	--top-26: 26px;
   	
 }
