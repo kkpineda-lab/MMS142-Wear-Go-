@@ -15,7 +15,7 @@
 </head>
 <body>
   	
-  	<div class="home-mockup">
+  	<div class="home1-mockup">
     		<div class="background">
     		</div>
     		<div class="about-us" data-scroll-to="aboutUsContainer">
@@ -40,7 +40,7 @@
         				</span>
       			</div>
     		</div>
-    		<div class="products" data-scroll-to="productsContainer">
+    		<div class="products" data-scroll-to="productsContainer" id="productsContainer">
       			<div class="products-child">
       			</div>
       			<div class="background2">
@@ -142,7 +142,7 @@
       			</div>
       			<div class="home-shop">Home | Shop | About | Contact</div>
       			<div class="home2" id="homeText">Home</div>
-      			<div class="shop" id="shopText">Shop</div>
+      			<div class="shop" data-scroll-to="shopText" id="shopText">Shop</div>
       			<div class="about" id="aboutText">About</div>
       			<div class="contact" id="contactText">Contact</div>
       			<img class="wg-logo-icon2" alt="">
@@ -154,6 +154,17 @@
   	
   	
   	<script>
+    		var productsContainer = document.getElementById("productsContainer");
+    		if(productsContainer) {
+      			productsContainer.addEventListener("click", function () {
+        				var anchor = document.querySelector("[data-scroll-to='shopText']");
+        				if(anchor) {
+          					anchor.scrollIntoView({"block":"start","behavior":"smooth"})
+        				}
+      			});
+    		}
+    		
+    		
     		var termsConditions = document.getElementById("termsConditions");
     		if(termsConditions) {
       			termsConditions.addEventListener("click", function (e) {
