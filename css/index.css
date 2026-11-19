@@ -553,3 +553,15 @@ html {
         overflow-x: hidden;
     }
 }
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.home1-mockup {
+    transform-origin: top left;
+}
