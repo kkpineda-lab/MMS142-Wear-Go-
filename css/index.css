@@ -1,5 +1,6 @@
 .home1-mockup {
-  	width: 100%;
+  	width: 1440px;
+    flex: 0 0 auto;
   	height: 2287px;
   	position: relative;
   	background-color: var(--color-white);
@@ -505,4 +506,52 @@
   	height: 73.9px;
   	object-fit: cover;
 }
+
+
+
+/* Homepage navigation and linked product cards */
+.home2,
+.shop,
+.about,
+.contact,
+.privacy-policy2,
+.terms-conditions {
+    color: inherit;
+    text-decoration: none;
+}
+
+.product-1,
+.product-2,
+.product-3 {
+    text-decoration: none;
+}
+
+.home2:hover,
+.shop:hover,
+.about:hover,
+.contact:hover,
+.product-1:hover,
+.product-2:hover,
+.product-3:hover,
+.privacy-policy2:hover,
+.terms-conditions:hover {
+    cursor: pointer;
+}
+
+.header {
+    z-index: 10;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* The homepage keeps its original Figma layout and is scaled by the
+   resizeWebsite() function in index.html on narrower screens. */
+@media (max-width: 1439px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
 
