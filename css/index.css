@@ -9,6 +9,7 @@
   	font-size: var(--fs-15);
   	color: var(--color-navy);
   	font-family: var(--font-sora);
+    transform-origin: top left;
 }
 .home1-mockup-inner {
   	position: absolute;
