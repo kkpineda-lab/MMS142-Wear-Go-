@@ -1,1 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Do Good Work Tee</title>
 
+	<!-- Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,700&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&display=swap">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+	integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+	crossorigin="anonymous">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- External JavaScript -->
+	<script src="js/order.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<!-- Nav Bar -->
+		<nav class="navbar md:navbar-expand py-0">
+			<div class="container">
+
+				<span class="navbar-brand">
+					<img src="images/wg-logo-small.png" alt="Wear & Go Logo" class="brand-logo">
+				</span>
+
+				<button class="button-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#mainNav" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon" aria-hidden="true"></span>
+				</button>
+
+				<dialog class="drawer drawer-end" id="mainNav">
+					<div class="drawer-header">
+						<p class="drawer-title h5 mb-0">Menu</p>
+						<button type="button" class="button-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+					</div>
+
+					<div class="drawer-body">
+						<ul class="nav navbar-nav align-items-center">
+							<li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+							<li class="nav-item d-none md:d-inline nav-line" aria-hidden="true">|</li>
+							<li class="nav-item"><a class="nav-link" href="home.html#shop">Shop</a></li>
+							<li class="nav-item d-none md:d-inline nav-line" aria-hidden="true">|</li>
+							<li class="nav-item"><a class="nav-link" href="home.html#about">About</a></li>
+							<li class="nav-item d-none md:d-inline nav-line" aria-hidden="true">|</li>
+							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+						</ul>
+
+						<div class="d-flex align-items-center gap-2 md:ms-auto">
+							<form role="search">
+								<label for="siteSearch" class="visually-hidden">Search</label>
+								<input id="siteSearch" class="form-control rounded-pill" type="search" placeholder="Search">
+							</form>
+
+							<button type="button" class="nav-extra-button" aria-label="View Cart" onclick="alert('Cart is currently unavailable')">
+								<img src="images/bag-icon.png" alt="" class="nav-icon-img">
+							</button>
+
+							<button type="button" class="nav-extra-button" aria-label="Settings" onclick="alert('Store settings currently unavailable')">
+								<img src="images/gear-icon.png" alt="" class="nav-icon-img">
+							</button>
+						</div>
+					</div>
+				</dialog>
+			</div>
+		</nav>
+	</header>
+
+	<main class="container mt-0 mb-4">
+
+		<!-- Product Details Banner -->
+		<div class="product-banner-box text-center py-6 mb-6">
+			<p class="product-banner-title mb-1">Product Details</p>
+			<p class="product-banner-subtitle mb-0">Style. Comfort. Go.</p>
+		</div>
+
+		<!-- Main Shop -->
+		<div class="row g-6">
+
+			<!-- Product Display -->
+			<div class="md:col-7">
+				<div class="product-showcase h-100 d-flex justify-content-center align-items-center">
+
+					<div class="product-side-card rounded-4">
+						<img src="images/shirt-do-good-work.png" alt="Do Good Work T-shirt" class="product-card-img">
+					</div>
+
+					<div class="product-center-card rounded-4 shadow">
+						<img src="images/design-do-good-work.png" alt="Do Good Work shirt design" class="product-card-img">
+					</div>
+
+					<div class="product-side-card rounded-4">
+						<img src="images/model-do-good-work.png" alt="Do Good Work T-shirt worn by model" class="product-card-img">
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Product Details Options -->
+			<div class="md:col-5">
+				<div class="product-details-card p-6">
+
+					<!-- Name, Rating, and Price -->
+					<h1 id="productTitle" class="product-title mb-1">Do Good Work Tee</h1>
+
+					<p class="product-rating mb-2" aria-label="Rated 4.5 out of 5 stars based on 23 reviews">
+						☆☆☆☆☆ 4.5 (23 Reviews)
+					</p>
+
+					<p id="productPrice" class="product-price mb-3">₱499.00</p>
+
+					<p class="product-description mb-0">
+						Make every day meaningful with the Do Good Work Tee.
+						Designed for people who value dedication, positivity, and hard work.
+						This comfortable shirt is perfect for everyday wear and casual occasions.
+					</p>
+
+					<!-- Color Choices -->
+					<div class="mb-4">
+						<p class="product-label mb-2">Color</p>
+
+						<div class="d-flex gap-2">
+							<label class="shirt-color shirt-white" aria-label="White">
+								<input type="radio" name="shirtColor" value="White" checked>
+							</label>
+
+							<label class="shirt-color shirt-black" aria-label="Black">
+								<input type="radio" name="shirtColor" value="Black">
+							</label>
+
+							<label class="shirt-color shirt-darkgray" aria-label="Dark Gray">
+								<input type="radio" name="shirtColor" value="Dark Gray">
+							</label>
+
+							<label class="shirt-color shirt-lightgray" aria-label="Light Gray">
+								<input type="radio" name="shirtColor" value="Light Gray">
+							</label>
+						</div>
+					</div>
+
+					<!-- Size Choices -->
+					<div class="mb-4">
+						<p class="product-label mb-2">Size</p>
+
+						<div class="d-flex gap-2">
+							<label class="product-size-button">
+								<input type="radio" name="shirtSize" value="S"> S
+							</label>
+
+							<label class="product-size-button">
+								<input type="radio" name="shirtSize" value="M"> M
+							</label>
+
+							<label class="product-size-button">
+								<input type="radio" name="shirtSize" value="L"> L
+							</label>
+
+							<label class="product-size-button">
+								<input type="radio" name="shirtSize" value="XL" checked> XL
+							</label>
+						</div>
+					</div>
+
+					<!-- Quantity -->
+					<div class="mb-5">
+						<label for="quantityInput" class="form-label product-label">Quantity</label>
+						<input type="number" id="quantityInput" class="form-control product-quantity-input" value="1" min="1" max="99">
+					</div>
+
+					<!-- Buttons -->
+					<div class="d-flex justify-content-evenly my-5">
+						<button type="button" class="product-button-cart" onclick="alert('Added to cart!')">Add to Cart</button>
+
+						<button type="button" class="product-button-order" data-bs-toggle="dialog" data-bs-target="#orderDialog">Order Now</button>
+					</div>
+
+					<hr class="product-divider my-5">
+
+					<!-- Reviews -->
+					<section>
+						<h2 class="product-reviews-heading mb-4">Reviews (23)</h2>
+
+						<div class="d-flex align-items-start gap-3 mb-3">
+							<div class="product-avatar" aria-hidden="true"></div>
+
+							<div>
+								<p class="product-reviewer mb-0">John Cena : <span>(Black)</span></p>
+								<p class="product-stars mb-1">☆☆☆☆☆</p>
+								<p class="product-review-text mb-0">Love it!!!</p>
+							</div>
+						</div>
+
+						<div class="d-flex align-items-start gap-3 mb-3">
+							<div class="product-avatar" aria-hidden="true"></div>
+
+							<div>
+								<p class="product-reviewer mb-0">Lamila Haart : <span>(White)</span></p>
+								<p class="product-stars mb-1">☆☆☆☆☆</p>
+								<p class="product-review-text mb-0">Great quality and comfy fit.</p>
+							</div>
+						</div>
+
+						<div class="text-center">
+							<a href="#reviews" class="product-see-more" onclick="alert('Showing all reviews!')">See More</a>
+						</div>
+					</section>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Order Form Dialog -->
+		<dialog class="dialog product-order-dialog" id="orderDialog" aria-labelledby="orderDialogTitle">
+
+			<div class="dialog-header border-0 pb-0">
+				<h2 class="visually-hidden" id="orderDialogTitle">Order Form</h2>
+				<button type="button" class="product-button-close ms-auto" data-bs-dismiss="dialog" aria-label="Close Order Form">&times;</button>
+			</div>
+
+			<div class="dialog-body pt-0">
+				<form id="orderForm" action="#" method="post">
+
+					<!-- Customer Details -->
+					<div class="mb-3">
+						<label for="customerName" class="form-label product-label">Name</label>
+						<input type="text" id="customerName" name="full_name" class="form-control product-input" placeholder="Enter your name" required autocomplete="name">
+					</div>
+
+					<div class="mb-3">
+						<label for="customerPhone" class="form-label product-label">Contact Number</label>
+						<input type="tel" id="customerPhone" name="tel" class="form-control product-input" placeholder="Enter your contact number" required autocomplete="tel">
+					</div>
+
+					<div class="mb-3">
+						<label for="customerEmail" class="form-label product-label">E-mail</label>
+						<input type="email" id="customerEmail" name="email" class="form-control product-input" placeholder="Enter your email address" required autocomplete="email">
+					</div>
+
+					<div class="mb-3">
+						<label for="customerAddress" class="form-label product-label">Address/Location</label>
+						<textarea id="customerAddress" name="address" class="form-control product-input" rows="2" placeholder="Country, Province, City, Barangay, Street, House/Unit#" required autocomplete="street-address"></textarea>
+					</div>
+
+					<div class="mb-3">
+						<label for="discountCode" class="form-label product-label">Discount Code</label>
+						<input type="text" id="discountCode" class="form-control product-input" placeholder="Enter code">
+					</div>
+
+					<!-- Method of Payment -->
+					<fieldset class="mb-4">
+						<legend class="col-form-label product-label pt-0">Payment Method</legend>
+
+						<div class="d-flex align-items-center gap-2 mb-1">
+							<input type="radio" name="paymentMethod" id="payCOD" value="Cash on Delivery" checked>
+							<label for="payCOD" class="product-payment-label">Cash on Delivery</label>
+						</div>
+
+						<div class="d-flex align-items-center gap-2 mb-1">
+							<input type="radio" name="paymentMethod" id="payCard" value="Card">
+							<label for="payCard" class="product-payment-label">Card</label>
+						</div>
+
+						<div class="d-flex align-items-center gap-2 mb-1">
+							<input type="radio" name="paymentMethod" id="payOnline" value="Online Payment">
+							<label for="payOnline" class="product-payment-label">Online Payment</label>
+						</div>
+					</fieldset>
+
+					<div class="text-center">
+						<button type="submit" class="product-button-order">Place Order</button>
+					</div>
+
+				</form>
+			</div>
+		</dialog>
+	</main>
+
+	<!-- Footer -->
+	<footer class="site-footer py-3 mt-auto">
+		<div class="container d-flex flex-wrap justify-content-between align-items-center">
+
+			<p class="mb-0">&copy; 2026 Wear & Go. All rights reserved.</p>
+
+			<div class="dflex gap-2">
+				<a href="privacy.html" class="footer-link">Privacy Policy</a>
+				<span aria-hidden="true">|</span>
+				<a href="terms.html" class="footer-link">Terms & Conditions</a>
+			</div>
+
+		</div>
+	</footer>
+
+	<!-- Bootstrap JavaScript -->
+	<script type="module"
+	src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+	crossorigin="anonymous"></script>
+
+</body>
+</html>
