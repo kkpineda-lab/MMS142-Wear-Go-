@@ -361,7 +361,7 @@
   	font-weight: 300;
 }
 .header {
-  	position: absolute;
+  	position: fix;
   	top: 0px;
   	left: 0px;
   	width: var(--width-1440);
