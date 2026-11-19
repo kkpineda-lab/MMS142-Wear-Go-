@@ -197,6 +197,7 @@ body {
     position: relative;
     width: 767px;
     max-width: 67.3%;
+    min-width: 0;
 }
 
 .privacy-sections {
