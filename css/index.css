@@ -1,7 +1,7 @@
 .home1-mockup {
-  	width: 90rem;
+  	width: 1440px;
     flex: 0 0 auto;
-  	height: 142.9375rem;
+  	height: 2287px;
   	position: relative;
   	background-color: var(--color-white);
   	overflow: hidden;
@@ -12,74 +12,74 @@
 }
 .home1-mockup-inner {
   	position: absolute;
-  	top: 91.5rem;
-  	left: 0;
-  	width: 90.0625rem;
-  	height: 51.4375rem;
+  	top: 1464px;
+  	left: 0px;
+  	width: 1441px;
+  	height: 823px;
   	overflow: hidden;
   	flex-shrink: 0;
 }
 .frame-child {
   	position: absolute;
-  	top: -91.5rem;
-  	left: 0;
+  	top: -1464px;
+  	left: 0px;
   	background-color: var(--color-white);
-  	width: 90.0625rem;
-  	height: 142.9375rem;
+  	width: 1441px;
+  	height: 2287px;
   	overflow: hidden;
   	flex-shrink: 0;
 }
 .background {
   	position: absolute;
-  	top: 0;
-  	left: 0;
+  	top: 0px;
+  	left: 0px;
   	background: linear-gradient(180deg, var(--color-antiquewhite-100) 21.63%, var(--color-white));
   	width: var(--width-1440);
-  	height: 142.9375rem;
+  	height: 2287px;
   	flex-shrink: 0;
 }
 .about-us {
   	position: absolute;
-  	top: 94.875rem;
-  	left: 0.875rem;
-  	width: 89.16875rem;
-  	height: 48.15rem;
+  	top: 1518px;
+  	left: 14px;
+  	width: 1426.7px;
+  	height: 770.4px;
   	flex-shrink: 0;
-  	font-size: 1.5rem;
+  	font-size: 24px;
   	font-family: var(--font-nunito);
 }
 .about-us-child {
   	position: absolute;
-  	top: 0;
-  	left: 0.9375rem;
+  	top: 0px;
+  	left: 15px;
   	background: linear-gradient(90deg, rgba(255, 255, 255, 0), var(--color-white) 16%, var(--color-white) 85.58%, rgba(255, 255, 255, 0) 99.98%);
-  	width: 86.375rem;
-  	height: 48.0625rem;
+  	width: 1382px;
+  	height: 769px;
 }
 .model3-icon {
   	position: absolute;
-  	top: 2.09rem;
-  	left: 49.3375rem;
-  	width: 39.83125rem;
-  	height: 46.0625rem;
+  	top: 33.44px;
+  	left: 789.4px;
+  	width: 637.3px;
+  	height: 737px;
   	object-fit: contain;
 }
 .wg-logo-icon {
   	position: absolute;
-  	top: 2.875rem;
-  	left: 0;
-  	width: 23.63125rem;
-  	height: 36.48125rem;
+  	top: 46px;
+  	left: 0px;
+  	width: 378.1px;
+  	height: 583.7px;
   	object-fit: contain;
 }
 .wear-go-container {
   	position: absolute;
-  	top: 8.9375rem;
-  	left: 17.5rem;
+  	top: 143px;
+  	left: 280px;
   	display: flex;
   	align-items: center;
-  	width: 34rem;
-  	height: 28.4375rem;
+  	width: 544px;
+  	height: 455px;
 }
 .wear-go-container2 {
   	width: 100%;
@@ -92,159 +92,476 @@
 }
 .about-wear-container {
   	position: absolute;
-  	top: 3.615rem;
-  	left: 8.89rem;
+  	top: 57.84px;
+  	left: 142.24px;
   	font-size: var(--fs-48);
   	text-align: left;
   	display: flex;
   	align-items: center;
-  	width: 27rem;
-  	height: 2.3125rem;
+  	width: 432px;
+  	height: 37px;
   	font-family: var(--font-sora);
 }
 .products {
   	position: absolute;
-  	top: 42.9375rem;
-  	left: 0.1875rem;
-  	width: 89.8125rem;
-  	height: 51.9375rem;
+  	top: 687px;
+  	left: 3px;
+  	width: 1437px;
+  	height: 831px;
   	flex-shrink: 0;
   	font-family: var(--font-nunito);
 }
 .products-child {
   	position: absolute;
-  	top: 0;
-  	left: 0;
-  	width: 89.8125rem;
-  	height: 51.9375rem;
+  	top: 0px;
+  	left: 0px;
+  	width: 1437px;
+  	height: 831px;
   	overflow: hidden;
 }
 .background2 {
   	position: absolute;
-  	top: 8.6875rem;
-  	left: 1.625rem;
-  	border-radius: 0.3125rem;
+  	top: 139px;
+  	left: 26px;
+  	border-radius: 5px;
   	background-color: var(--color-pink);
-  	width: 86.375rem;
-  	height: 43.25rem;
+  	width: 1382px;
+  	height: 692px;
 }
 .model2-icon {
   	position: absolute;
-  	top: 12.1875rem;
-  	left: 1.625rem;
-  	width: 27.5rem;
-  	height: 39.75rem;
+  	top: 195px;
+  	left: 26px;
+  	width: 440px;
+  	height: 636px;
   	object-fit: contain;
 }
 .product-3 {
   	position: absolute;
-  	top: 25.375rem;
-  	left: 68.5rem;
-  	width: 17.875rem;
-  	height: 24.75rem;
+  	top: 406px;
+  	left: 1096px;
+  	width: 286px;
+  	height: 396px;
   	cursor: pointer;
   	color: var(--color-black);
 }
 .product-3-child {
   	position: absolute;
-  	top: 0;
-  	left: 0;
+  	top: 0px;
+  	left: 0px;
   	border-radius: var(--br-12);
   	background-color: var(--color-antiquewhite-100);
-  	width: 17.8125rem;
-  	height: 24.75rem;
+  	width: 285px;
+  	height: 396px;
 }
 .do-good-work-container {
   	position: absolute;
-  	top: 18.5rem;
-  	left: 3.375rem;
+  	top: 296px;
+  	left: 54px;
   	display: flex;
   	align-items: center;
-  	width: 11.175rem;
-  	height: 6.21875rem;
+  	width: 178.8px;
+  	height: 99.5px;
 }
 .span {
-  	font-size: 0.8125rem;
+  	font-size: 13px;
 }
 .do-good-work-tee-mockup-1 {
   	position: absolute;
-  	top: 1rem;
-  	left: 0;
+  	top: 16px;
+  	left: 0px;
   	box-shadow: var(--shadow-drop);
-  	width: 17.875rem;
-  	height: 17.875rem;
+  	width: 286px;
+  	height: 286px;
   	object-fit: cover;
 }
 .product-2 {
   	position: absolute;
-  	top: 25.3125rem;
-  	left: 49.5625rem;
-  	width: 17.8125rem;
-  	height: 24.8125rem;
+  	top: 405px;
+  	left: 793px;
+  	width: 285px;
+  	height: 397px;
   	cursor: pointer;
 }
 .product-2-child {
   	position: absolute;
-  	top: 0;
-  	left: 0;
+  	top: 0px;
+  	left: 0px;
   	border-radius: var(--br-12);
   	background-color: var(--color-antiquewhite-100);
-  	width: 17.8125rem;
-  	height: 24.8125rem;
+  	width: 285px;
+  	height: 397px;
 }
 .everyday-comfort-tee-container {
   	position: absolute;
-  	top: 18.5625rem;
-  	left: 2.4375rem;
+  	top: 297px;
+  	left: 39px;
   	display: flex;
   	align-items: center;
-  	width: 12.94375rem;
-  	height: 6.21875rem;
+  	width: 207.1px;
+  	height: 99.5px;
 }
 .everyday-comfort-tee-mockup-1 {
   	position: absolute;
-  	top: 1.0625rem;
-  	left: 0;
+  	top: 17px;
+  	left: 0px;
   	box-shadow: var(--shadow-drop);
-  	width: 17.8125rem;
-  	height: 17.8125rem;
+  	width: 285px;
+  	height: 285px;
   	object-fit: cover;
 }
 .product-1 {
   	position: absolute;
-  	top: 25.375rem;
-  	left: 30.9375rem;
-  	width: 17.625rem;
-  	height: 24.75rem;
+  	top: 406px;
+  	left: 495px;
+  	width: 282px;
+  	height: 396px;
   	cursor: pointer;
 }
 .product-1-child {
   	position: absolute;
-  	top: 0;
-  	left: 0;
+  	top: 0px;
+  	left: 0px;
   	border-radius: var(--br-12);
   	background-color: var(--color-antiquewhite-100);
-  	width: 17.625rem;
-  	height: 24.75rem;
+  	width: 282px;
+  	height: 396px;
 }
 .dont-be-late-container {
   	position: absolute;
-  	top: 18.5625rem;
-  	left: 3.6875rem;
+  	top: 297px;
+  	left: 59px;
   	display: flex;
   	align-items: center;
-  	width: 10.24375rem;
-  	height: 6.1125rem;
+  	width: 163.9px;
+  	height: 97.8px;
 }
 .dont-be-late-tee-mockup-1 {
   	position: absolute;
-  	top: 1rem;
-  	left: 0;
+  	top: 16px;
+  	left: 0px;
   	box-shadow: var(--shadow-drop);
-  	width: 17.625rem;
-  	height: 17.625rem;
+  	width: 282px;
+  	height: 282px;
   	object-fit: cover;
 }
 .find-your-go-to {
-  	position: absolute;n: top left;
+  	position: absolute;
+  	top: 245px;
+  	left: 413px;
+  	font-size: 36px;
+  	display: flex;
+  	font-family: var(--font-sora);
+  	color: var(--color-white);
+  	align-items: center;
+  	justify-content: center;
+  	width: 928px;
+  	height: 112px;
+}
+.everyday-wear-container {
+  	position: absolute;
+  	top: 82px;
+  	left: 26px;
+  	font-size: var(--fs-48);
+  	text-align: left;
+  	display: flex;
+  	align-items: center;
+  	width: 934px;
+  	height: var(--height-44);
+  	font-family: var(--font-sora);
+}
+.home {
+  	position: absolute;
+  	top: 0px;
+  	left: 3px;
+  	width: 1425px;
+  	height: 826px;
+  	flex-shrink: 0;
+  	font-size: 22px;
+  	color: var(--color-pink);
+}
+.home-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 1425px;
+  	height: 749px;
+  	overflow: hidden;
+}
+.model1-icon {
+  	position: absolute;
+  	top: 106px;
+  	left: 748px;
+  	width: 660px;
+  	height: 720px;
+  	object-fit: cover;
+}
+.stylish-comfortable-and {
+  	position: absolute;
+  	top: 321px;
+  	left: 60px;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 817px;
+  	height: 35px;
+}
+.style-made-easy {
+  	position: absolute;
+  	top: 225px;
+  	left: 64px;
+  	font-size: 96px;
+  	font-weight: 800;
+  	color: var(--color-steelblue);
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 809px;
+  	height: 86px;
+}
+.footer {
+  	position: absolute;
+  	top: 2264px;
+  	left: 0px;
+  	width: var(--width-1440);
+  	height: 23px;
+  	flex-shrink: 0;
+  	text-align: left;
+  	color: var(--color-antiquewhite-100);
+}
+.footer2 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: var(--color-steelblue);
+  	width: var(--width-1440);
+  	height: 23px;
+}
+.privacy-policy {
+  	position: absolute;
+  	top: 2px;
+  	left: 1139px;
+}
+.terms-conditions {
+  	position: absolute;
+  	top: 2px;
+  	left: 1259px;
+  	cursor: pointer;
+}
+.privacy-policy2 {
+  	position: absolute;
+  	top: 2px;
+  	left: 1139px;
+  	cursor: pointer;
+}
+.wear-go2 {
+  	position: absolute;
+  	top: 2px;
+  	left: 29px;
+  	font-weight: 300;
+}
+.header {
+  	position: fixed;
+  	top: 0px;
+  	left: 0px;
+  	width: var(--width-1440);
+  	height: 85px;
+  	flex-shrink: 0;
+  	text-align: left;
+  	font-size: var(--fs-20);
+  	color: var(--color-navy);
+}
+.header-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: rgba(234, 229, 214, 0.65);
+  	width: var(--width-1440);
+  	height: 85px;
+}
+.settings-icon {
+  	position: absolute;
+  	width: 3.1%;
+  	top: calc(50% - 16.5px);
+  	right: 2%;
+  	left: 94.9%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	height: 43.3px;
+  	object-fit: cover;
+}
+.cart-icon {
+  	position: absolute;
+  	width: 3.1%;
+  	top: calc(50% - 16.5px);
+  	right: 5.83%;
+  	left: 91.07%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	height: 43.3px;
+  	object-fit: cover;
+}
+.search {
+  	position: absolute;
+  	top: 26.06px;
+  	left: 916px;
+  	width: 384.8px;
+  	height: 43.4px;
+  	font-size: 17px;
+  	color: var(--color-steelblue);
+  	font-family: var(--font-nunito);
+}
+.searchfield {
+  	position: absolute;
+  	height: 100%;
+  	width: 100%;
+  	top: 0%;
+  	right: 0%;
+  	bottom: 0%;
+  	left: 0%;
+  	border-radius: 27px;
+  	background-color: var(--color-white);
+}
+.text {
+  	position: absolute;
+  	height: 50%;
+  	width: 298.4px;
+  	top: 25.01%;
+  	left: 16.58%;
+  	letter-spacing: -0.41px;
+  	line-height: 22px;
+  	display: inline-block;
+}
+.iconsearch {
+  	position: absolute;
+  	height: 50%;
+  	width: 6.42%;
+  	top: 25.01%;
+  	right: 87.7%;
+  	bottom: 24.99%;
+  	left: 5.88%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.home-shop {
+  	position: absolute;
+  	width: 488.9px;
+  	top: 26px;
+  	left: 169px;
+  	font-weight: 600;
+  	display: flex;
+  	align-items: center;
+  	height: 44.2px;
+}
+.home2 {
+  	position: absolute;
+  	width: var(--width-64);
+  	top: 26px;
+  	left: 169px;
+  	font-weight: 600;
+  	display: flex;
+  	align-items: center;
+  	height: var(--height-44);
+  	cursor: pointer;
+}
+.shop {
+  	position: absolute;
+  	width: var(--width-64);
+  	top: 26px;
+  	left: 247px;
+  	font-weight: 600;
+  	display: flex;
+  	align-items: center;
+  	height: var(--height-44);
+  	cursor: pointer;
+}
+.about {
+  	position: absolute;
+  	width: 71px;
+  	top: 26px;
+  	left: 317px;
+  	font-weight: 600;
+  	display: flex;
+  	align-items: center;
+  	height: var(--height-44);
+  	cursor: pointer;
+}
+.contact {
+  	position: absolute;
+  	width: 89px;
+  	top: 26px;
+  	left: 397px;
+  	font-weight: 600;
+  	display: flex;
+  	align-items: center;
+  	height: var(--height-44);
+  	cursor: pointer;
+}
+.wg-logo-icon2 {
+  	position: absolute;
+  	top: 11px;
+  	left: 29px;
+  	width: 125.2px;
+  	height: 73.9px;
+  	object-fit: cover;
+}
+
+
+
+/* Homepage navigation and linked product cards */
+.home2,
+.shop,
+.about,
+.contact,
+.privacy-policy2,
+.terms-conditions {
+    color: inherit;
+    text-decoration: none;
+}
+
+.product-1,
+.product-2,
+.product-3 {
+    text-decoration: none;
+}
+
+.home2:hover,
+.shop:hover,
+.about:hover,
+.contact:hover,
+.product-1:hover,
+.product-2:hover,
+.product-3:hover,
+.privacy-policy2:hover,
+.terms-conditions:hover {
+    cursor: pointer;
+}
+
+.header {
+    z-index: 10;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* The homepage keeps its original Figma layout and is scaled by the
+   resizeWebsite() function in index.html on narrower screens. */
+@media (max-width: 1439px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.home1-mockup {
+    transform-origin: top left;
 }
