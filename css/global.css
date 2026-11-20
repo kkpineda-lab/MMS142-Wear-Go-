@@ -121,3 +121,17 @@ body {
 .footer-link:hover {
 	text-decoration: underline;
 }
+
+/* Phones only: keep the header (and its menu button) visible on every page */
+@media (max-width: 767.98px) {
+	header {
+		position: sticky;
+		top: 0;
+		z-index: 1020;
+	}
+
+	/* Smaller logo so the sticky bar doesn't take up too much of the screen */
+	.brand-logo {
+		width: 90px;
+	}
+}
