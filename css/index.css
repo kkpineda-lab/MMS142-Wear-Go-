@@ -365,3 +365,12 @@ html {
 html {
 	scroll-padding-top: 100px;
 }
+
+@media (max-width: 1439px) {
+  html, body {
+    overflow-x: hidden;
+    min-height: 0 !important;
+    height: auto !important;
+    display: block !important;
+  }
+}
