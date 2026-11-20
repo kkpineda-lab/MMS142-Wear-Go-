@@ -1,12 +1,15 @@
 .contact-image-display {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 	width: 100%;
-	max-width: 600px;
-	margin: 0 auto;
 }
 
 .contact-image-display img {
 	display: block;
-	width: 100%;
+	width: auto;
+	max-width: 100%;
+	max-height: calc(100vh - 143px);
 	height: auto;
 }
 
