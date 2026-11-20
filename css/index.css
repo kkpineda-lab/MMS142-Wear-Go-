@@ -67,7 +67,7 @@
 .wg-logo {
   	position: absolute;
   	top: 50px;
-  	left: -25px;
+  	left: -15px;
   	width: 378.1px;
   	height: 583.7px;
   	object-fit: contain;
@@ -130,7 +130,7 @@
 }
 .model2-icon {
   	position: absolute;
-  	top: 215px;
+  	top: 220px;
   	left: 26px;
   	width: 440px;
   	height: 636px;
@@ -143,7 +143,7 @@
   	width: 286px;
   	height: 396px;
   	cursor: pointer;
-  	color: var(--color-navy);
+  	color: var(--color-steelblue);
 }
 .product-3-child {
   	position: absolute;
@@ -182,6 +182,7 @@
   	width: 285px;
   	height: 397px;
   	cursor: pointer;
+    color: var(--color-steelblue);
 }
 .product-2-child {
   	position: absolute;
@@ -217,6 +218,7 @@
   	width: 282px;
   	height: 396px;
   	cursor: pointer;
+    color: var(--color-steelblue);
 }
 .product-1-child {
   	position: absolute;
