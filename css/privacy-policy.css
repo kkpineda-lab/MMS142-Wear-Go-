@@ -1,3 +1,4 @@
+
 /* Main page section*/
 
 .privacy-page {
@@ -129,7 +130,7 @@
     position: absolute;
     bottom: 0;
     right: 6%;
-    width: 550px;
+    width: clamp(320px, 36vw, 550px);
     z-index: 2;
     pointer-events: none;
 }
@@ -139,6 +140,14 @@
     width: 100%;
     height: auto;
     object-fit: contain;
+}
+
+/* Desktop responsive adjustment */
+
+@media (min-width: 1401px) and (max-width: 1600px) {
+    .privacy-image {
+        width: clamp(320px, 32vw, 470px);
+    }
 }
 
 /* Mobile layout */
