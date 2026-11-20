@@ -15,9 +15,24 @@ body {
 	min-height: 100vh;
 }
 
+/* Sticky header: stays at the top while scrolling */
+header {
+	position: sticky;
+	top: 0;
+	z-index: 1020;
+}
+
+/* Semi-transparent background */
 .navbar {
-	background-color: #EAE5D6;
+	background-color: rgba(234, 229, 214, 0.85); /* #EAE5D6 at 85% opacity */
+	-webkit-backdrop-filter: blur(8px);
+	backdrop-filter: blur(8px);
 	padding: 0;
+}
+
+/* Keep #shop and #about from hiding under the sticky header when you click the nav links */
+html {
+	scroll-padding-top: 100px;
 }
 
 .navbar-brand {
