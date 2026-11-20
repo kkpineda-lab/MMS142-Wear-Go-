@@ -1,47 +1,89 @@
-h1 {
+.contact-image-display {
+	width: 100%;
+	max-width: 650px;
+	margin: 0 auto;
+}
+
+.contact-image-display img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    min-height: 100%; 
+	line-height: 1.6;
+}
+
+main {
+	width: 100%;
+	flex: 1;
+	background-color: #EAE5D6;
+	color: #0E0385;
+}
+
+main h1 {
 	color: #4F639F;
-	font-family: Sora, sans-serif;
+	font-family: 'Sora', sans-serif;
 	font-weight: bolder;
 	font-size: 4rem;
 }
 
 h2 {
 	color: #DFADAF;
-	font-family: Sora, sans-serif;;
+	font-family: 'Sora', sans-serif;;
 	font-weight: bold;
-	font-size: 3 rem;
+	font-size: 3rem;
 }
 	
 h3 {
 	color: #4F639F;
-	font-family: Sora, sans-serif;
+	font-family: 'Sora', sans-serif;
 	font-weight: bold;
-	font-size: 3 rem;
+	font-size: 3rem;
 }
 
 h4 {
 	color: #4F639F;
-	font-family: Sora, sans-serif;
+	font-family: 'Sora', sans-serif;
 	font-weight: bold;
-	font-size: 1.5 rem;
+	font-size: 2rem;
 }
 
-p {
+main p {
 	color: #DFADAF;
-	font-family: Nunito, sans-serif;
-	font-weight: bold;
-	font-size: 0.5 rem;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 700;
+	font-size: 1rem;
 	text-decoration: none;
+}
+
+.requiredText {
+	font-family: 'Nunito', sans-serif;
+	font-size: 1rem;
+	text-decoration: none;
+	font-weight: normal;
 }
 
 #send-us-a-message-button {
 	color: #0E0385;
-	font-family: Sora, sans-serif;
-	border-style: none;
+	font-family: 'Sora', sans-serif;
+	border: none;
 	background: none;
-	text-decoration-line: underline;
+	text-decoration: underline;
+	font-weight: 700;
+	font-size: 1.35rem;
+}
+
+#redirect-text {
+	color: #4F639F;
+	font-family: 'Sora', sans-serif;
 	font-weight: bolder;
-	font-size: 1.25 rem;
+	font-size: 2rem;
+	margin: 1rem 1rem;
+	padding: 6rem 2rem;
 }
 
 @media (min-width: 768px) {
@@ -62,7 +104,6 @@ p {
   border: none;
   border-radius: 4px;
   padding: 1rem 1.5rem;
-  background-color: white;
   font-size: 1.1rem;
   font-weight: 700;
   color: #4F639F;
@@ -74,31 +115,38 @@ p {
 	border: none;
 	border-radius: 4px;
 	padding: 1rem 1.5rem;
-	background-color: white;
-	font-size: 1 rem;
 	font-weight: 700;
-	color: #4F639F;
+}
+
+.empty-container {
+	padding: 6rem 4rem;
+}
+
+.circle-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+	margin: 4rem 2rem;
+	padding: 4rem 2rem;
+}
+
+.circle {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+}
 	
-	.container {
-		display: flex;
-		flex-direction: row;
-	}
-	.circle {
-		height: 20px;
-		width: 20px;
-		border-radius: 50%;
-	}
-	#circle1 {
-		background-color: #4F639F;
-	}
+#circle1 {
+	background-color: #4F639F;
+}
 	
-	#circle2 {
-		background-color: #4F639F;
-	}
+#circle2 {
+	background-color: #4F639F;
+}
 	
-	#circle3 {
-		background-color: #4F639F;
-	}
+#circle3 {
+	background-color: #4F639F;
 }
 
 .contact-button-close, .redirect-button-close {
@@ -109,13 +157,14 @@ p {
   font-weight: 700;
   line-height: 1;
   cursor: pointer;
-  
+  width: 0.5rem;
+  padding: 0;
 }
 
 button {
   border-radius: 4px;
   font-weight: 600;
-  font-size: 1 rem;
+  font-size: 1rem;
   background-color: #0E0385;
   color: #FFFFFF;
   border: 1px solid #0E0385;
@@ -124,6 +173,14 @@ button {
 
 img {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+	height: auto;
+	object-fit: contain;
+}
+
+input::placeholder {
+	color: #DFADAF;
+}
+
+textarea::placeholder {
+	color: #DFADAF;
 }
