@@ -347,31 +347,3 @@ html {
         overflow-x: hidden;
     }
 }
-
-
-/* Sticky, semi-transparent header (homepage only) */
-.sticky-header {
-	position: sticky;
-	top: 0;
-	z-index: 1020;
-}
-
-.sticky-header .navbar {
-	background-color: rgba(234, 229, 214, 0.70); /* #EAE5D6 at 85% opacity */
-	-webkit-backdrop-filter: blur(8px);
-	backdrop-filter: blur(8px);
-}
-
-/* Keep #shop and #about from hiding under the header when you click the nav links */
-html {
-	scroll-padding-top: 100px;
-}
-
-@media (max-width: 1439px) {
-  html, body {
-    overflow-x: hidden;
-    min-height: 0 !important;
-    height: auto !important;
-    display: block !important;
-  }
-}
