@@ -24,7 +24,7 @@ header {
 
 /* Semi-transparent background */
 .navbar {
-	background-color: rgba(234, 229, 214, 0.85); /* #EAE5D6 at 85% opacity */
+	background-color: rgba(234, 229, 214, 0.70); /* #EAE5D6 at 85% opacity */
 	-webkit-backdrop-filter: blur(8px);
 	backdrop-filter: blur(8px);
 	padding: 0;
