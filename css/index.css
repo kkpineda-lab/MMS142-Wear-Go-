@@ -74,12 +74,14 @@
 }
 .wear-go-container {
   	position: absolute;
-  	top: 195px;
-  	left: 280px;
+  	top: 150px;
+  	left: 300px;
   	display: flex;
   	align-items: center;
   	width: 544px;
   	height: 455px;
+	line-height: 1.9;
+	text-align: center;
 }
 .wear-go-container2 {
   	width: 100%;
