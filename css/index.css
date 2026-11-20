@@ -73,15 +73,13 @@
   	object-fit: contain;
 }
 .wear-go-container {
-  	position: absolute;
-  	top: 150px;
-  	left: 300px;
-  	display: flex;
-  	align-items: center;
-  	width: 544px;
-  	height: 455px;
-	line-height: 1.3;
-	text-align: center;
+      position: absolute;
+      top: 195px;
+      left: 280px;
+      display: flex;
+      align-items: center;
+      width: 544px;
+      height: 455px;
 }
 .wear-go-container2 {
   	width: 100%;
